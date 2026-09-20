@@ -1,4 +1,4 @@
-﻿package com.studentmanagement;
+package com.studentmanagement;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -41,8 +41,8 @@ public final class Main {
 
     private void printMenu() {
         System.out.println("\n[1] List  [2] Add student  [3] Record grade  [4] Report");
-        System.out.println("[5] Search [6] Remove       [7] Save CSV     [8] Load CSV
-[9] Class report [0] Exit");
+        System.out.println("[5] Search [6] Remove       [7] Save CSV     [8] Load CSV");
+        System.out.println("[9] Class report [0] Exit");
         System.out.print("> ");
     }
 
