@@ -1,4 +1,4 @@
-package com.studentmanagement;
+﻿package com.studentmanagement;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -29,8 +29,9 @@ public final class Main {
                     case "6" -> remove();
                     case "7" -> save();
                     case "8" -> load();
+                    case "9" -> System.out.println(ReportService.classReport(registry.all()));
                     case "0" -> { System.out.println("Goodbye."); return; }
-                    default -> System.out.println("Please choose a number from 0 to 8.");
+                    default -> System.out.println("Please choose a number from 0 to 9.");
                 }
             } catch (IllegalArgumentException | IOException ex) {
                 System.out.println("Error: " + ex.getMessage());
@@ -40,7 +41,8 @@ public final class Main {
 
     private void printMenu() {
         System.out.println("\n[1] List  [2] Add student  [3] Record grade  [4] Report");
-        System.out.println("[5] Search [6] Remove       [7] Save CSV     [8] Load CSV [0] Exit");
+        System.out.println("[5] Search [6] Remove       [7] Save CSV     [8] Load CSV
+[9] Class report [0] Exit");
         System.out.print("> ");
     }
 
@@ -80,3 +82,5 @@ public final class Main {
         registry.add(alan);
     }
 }
+
+
